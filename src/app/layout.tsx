@@ -1,6 +1,6 @@
+import { getCssText, globalStyles } from '@/styles'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,8 +14,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  globalStyles()
   return (
     <html lang="en">
+      <head>
+        <style
+          id="stitches"
+          dangerouslySetInnerHTML={{ __html: getCssText() }}
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
