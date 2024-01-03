@@ -1,6 +1,7 @@
-import { getCssText, globalStyles } from '@/styles'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+
+import { getCssText, globalStyles } from '@/styles'
 
 const inter = Inter({ subsets: ['latin'] })
 

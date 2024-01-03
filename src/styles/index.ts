@@ -80,10 +80,16 @@ export const globalStyles = globalCss({
     boxSizing: 'border-box',
     padding: 0,
     margin: 0,
+
+    lineHeight: '$base',
   },
   body: {
-    backgroundColor: 'gray800',
+    backgroundColor: '$gray800',
     color: '$gray100',
     '-webkit-font-smoothing': 'antialiased',
+  },
+  button: {
+    fontFamily: 'inherit',
+    border: 'none',
   },
 })
