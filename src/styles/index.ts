@@ -92,4 +92,8 @@ export const globalStyles = globalCss({
     fontFamily: 'inherit',
     border: 'none',
   },
+  a: {
+    textDecoration: 'none',
+    color: 'inherit',
+  },
 })

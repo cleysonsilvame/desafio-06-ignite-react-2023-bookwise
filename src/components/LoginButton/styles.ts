@@ -19,7 +19,6 @@ export const Button = styled(Link, {
   fontWeight: '$bold',
   borderRadius: '0.5rem',
   outline: 'solid 0px $gray500',
-  textDecoration: 'none',
 
   transition: 'all 0.25s ease',
 
