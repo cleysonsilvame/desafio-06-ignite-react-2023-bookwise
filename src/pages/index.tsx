@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa'
 import { FcGoogle } from 'react-icons/fc'
 import { PiRocketLaunch } from 'react-icons/pi'
 
-import { LoginButton } from '@/components/LoginButton'
+import { SignInButton } from '@/components/LoginButton'
 import BookwiseCover from '@/images/bookwise-cover.jpg'
 import BookwiseIcon from '@/images/bookwise-icon.svg'
 
@@ -22,15 +22,15 @@ export default function Home() {
           <p>Faça seu login ou acesse como visitante.</p>
         </div>
         <ButtonsSection>
-          <LoginButton href="" icon={<FcGoogle />}>
+          <SignInButton href="" icon={<FcGoogle />}>
             Entrar com Google
-          </LoginButton>
-          <LoginButton href="" icon={<FaGithub />}>
+          </SignInButton>
+          <SignInButton href="" icon={<FaGithub />}>
             Entrar com GitHub
-          </LoginButton>
-          <LoginButton href="/home" icon={<PiRocketLaunch />}>
+          </SignInButton>
+          <SignInButton href="/home" icon={<PiRocketLaunch />}>
             Acessar como visitante
-          </LoginButton>
+          </SignInButton>
         </ButtonsSection>
       </LoginSection>
     </Container>

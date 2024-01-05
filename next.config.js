@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  compiler: {
-    styledComponents: true,
+  images: {
+    remotePatterns: [{ hostname: 'images.unsplash.com' }],
   },
+  transpilePackages: ['date-fns/locale'],
 }
 
 module.exports = nextConfig

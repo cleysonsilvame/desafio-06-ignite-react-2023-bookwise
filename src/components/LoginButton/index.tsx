@@ -2,12 +2,12 @@ import { LinkProps } from 'next/link'
 
 import { Button } from './styles'
 
-export type LoginButtonProps = LinkProps & {
+export type SignInButtonProps = LinkProps & {
   icon?: React.ReactNode
   children?: React.ReactNode
 }
 
-export function LoginButton({ icon, children, ...props }: LoginButtonProps) {
+export function SignInButton({ icon, children, ...props }: SignInButtonProps) {
   return (
     <Button {...props}>
       {icon && icon}

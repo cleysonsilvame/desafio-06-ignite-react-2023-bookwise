@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
         />
       </Head>
 
-      <main className={inter.className}>
+      <main className={inter.className} style={{ flex: 1 }}>
         <Component {...pageProps} />
       </main>
     </>,
